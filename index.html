@@ -1,21 +1,209 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
-    <title>HTML is Structure Only (After)</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu</title>
+    <link rel="stylesheet" href="external.css">
+
+    <style>
+        /********** Base styles **********/
+        * {
+            box-sizing: border-box;
+            text-align: center;
+
+
+        }
+
+        h1 {
+            margin-bottom: 15px;
+        }
+
+        p.box {
+            /* border: 1px solid black; */
+            /* background-color: #A52A2A; */
+            width: auto;
+            height: 150px;
+            /* margin-right: auto;
+            margin-left: auto; */
+            font-family: Helvetica;
+            color: white;
+            overflow: auto;
+            text-align: center;
+            padding: 5px;
+
+
+
+        }
+
+        div.container {
+            background-color: #00FFFF;
+            border: 3px solid rgb(1, 12, 1);
+            /* position: relative; */
+            /* text-align: left; */
+            /* width: fit-content; */
+            top: 10px;
+            /* justify-content: right; */
+            /* right: 100px; */
+            /* overflow: auto; */
+            margin-left: 70%;
+            padding: 10px;
+
+
+
+        }
+
+
+        /* Simple Responsive Framework. */
+        .row {
+            width: 100%;
+            position: relative;
+            /* display: flex; */
+
+        }
+
+        .box-margin {
+            margin: 1%;
+            width: 100%;
+            background-color: lightcoral;
+        }
+
+
+        /********** Large devices only **********/
+        @media (min-width: 992px) {
+
+            .col-lg-1,
+            .col-lg-2,
+            .col-lg-3 {
+                float: left;
+                border: 1px solid green;
+
+            }
+
+            .col-lg-1 {
+                width: 31.33%;
+            }
+
+            .col-lg-2 {
+                width: 66.66%;
+            }
+
+            .col-lg-3 {
+                width: 100%;
+            }
+
+        }
+
+        /********** Medium devices only **********/
+        @media (min-width: 768px) and (max-width: 991px) {
+
+            .col-md-1,
+            .col-md-2,
+            .col-md-3 {
+                float: left;
+                border: 1px solid green;
+            }
+
+            .col-md-1 {
+                width: 33.33%;
+            }
+
+            .col-md-2 {
+                width: 48%;
+            }
+
+            .col-md-3 {
+                width: 97%;
+            }
+
+
+        }
+
+        /********** Small devices only **********/
+        @media (min-width: 767px) {
+
+            .col-sm-1,
+            .col-sm-2,
+            .col-sm-3 {
+                float: left;
+
+            }
+
+            .col-sm-1 {
+                width: 33.33%;
+            }
+
+            .col-sm-2 {
+                width: 66.66%;
+            }
+
+            .col-sm-3 {
+                width: 100%;
+            }
+
+
+        }
+    </style>
 </head>
 
 <body>
-    <h1 style="color: green; font-size: 60px; text-align: center;">HTML is Structure Only</h1>
-    <p style="margin: 0 100px 0 100px; font-size: 1.5em;">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Recusandae temporibus esse suscipit nisi ad.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, doloribus eos perspiciatis.</p>
-    <footer>
-        <hr>
-        <p style="text-align: center;" onclick="alert('EMAILING US IS USELESS');">
-            Tech Support: yeah.right@server-is-down.com
-        </p>
-    </footer>
+    <h1>When Do I Think of You?</h1>
+
+    <div class="row">
+        <div class=" col-lg-1 col-md-2 box-margin">
+            <div class="container">menu</div>
+            <p class="box">I think of you in the morning
+                before the sun rises,
+                when in the still of the darkness
+                my heart feels your presence.
+                Your love, your tenderness,
+                your slow rhythmic breathing as you sleep,
+                and I am at peace.
+
+            </p>
+
+        </div>
+        <div class="col-lg-1 col-md-2 box-margin">
+            <div class="container">menu</div>
+            <p class="box">I think of you when the first rays of sunlight
+                spill like a waterfall between the blinds
+                and settle in my eyes.
+                I reach my hand, my foot, any body part will do,
+                to touch you and breathe you in.
+                It feeds my heart, my soul, my spirit,
+                and I am at peace.
+
+                I think of you at noon when the sun is at its highest,
+                when the heat warms my skin
+                and causes my eyes to close with sheer pleasure.
+                Thoughts of you surround me, envelop me, overpower me.
+                Images of you swirl around like a funnel cloud,
+                sucking into its grasp all that it touches,
+                and I am at peace.</p>
+        </div>
+        <div class="col-lg-1 col-md-3 box-margin">
+            <div class="container">menu</div>
+            <p class="box">I think of you when the sun is setting
+                and its final rays of light begin to fade.
+                I can hear your voice, deep, soft, and slow in my head--
+                words of beauty, joy, friendship, and everlasting love.
+                My heart begins to sing a love song so sweet and so gentle.
+                I cannot wait to share my day with you and yours with me.
+                And I am at peace.
+
+                I think of you when the sun has set and the stillness of the moon
+                is displaying one of its many wondrous phases.
+                Thoughts of your smile, your laugh, and your eyes
+                create a feeling that is impossible to express with just words.
+                The need to touch you, to feel you, to drink you in
+                is almost too much to hold inside.
+                Anticipation of you is the greatest gift.
+                I am at peace.</p>
+        </div>
+
+    </div>
+
 </body>
 
 </html>
